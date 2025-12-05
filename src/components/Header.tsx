@@ -21,11 +21,7 @@ export const NavBtns = (props: { text: string }) => {
 export const Header = () => {
   return (
     <header className="w-full h-full flex items-center">
-      <div className="w-full h-1/2 m-auto grid grid-cols-3 justify-between ">
-        <div className="font-bold flex items-start flex-col justify-center">
-          <small>Profissao</small>
-          <small> do Seculo</small>
-        </div>
+      <div className="w-full h-1/2 m-auto justify-between items-center flex">
         <nav className="flex gap-1 md:gap-8 items-center justify-center">
           <NavBtns text="Inicio" />
 

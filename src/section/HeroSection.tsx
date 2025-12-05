@@ -7,7 +7,7 @@ export const HeroSection = () => {
     <section id="hero-section">
       <div
         id="hero-container"
-        className="h-screen w-full grid grid-rows-7 max-w-[1440px] m-auto p-2"
+        className="h-svh w-full grid grid-rows-7 m-auto p-2"
       >
         <div className="flex items-center">
           <Header />

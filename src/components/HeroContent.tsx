@@ -5,7 +5,7 @@ import content from "@/content/heroContent.json";
 const MainContent = () => {
   const CtaBtn = () => {
     return (
-      <button className="bg-primary w-1/2 rounded-sm p-3 md:p-5 transition-all hover:scale-110 active:scale-95 text-black hover:drop-shadow-2xl font-bold">
+      <button className="bg-primary w-2/3 rounded-sm p-3 md:p-5 transition-all hover:scale-110 active:scale-95 text-black hover:drop-shadow-2xl font-bold">
         {content.content.cta}
       </button>
     );
