@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+/* ---------- VARIÁVEIS BASE ---------- */
+:root {
+  --background: #fafafa;
+  --foreground: #2a2a2a;
+
+  --black: #000000;
+  --white: #ffffff;
+
+  --primary: #39ff14;
+  --secondary: #8B5CF6;
+
+  --font-title: var(--font-poppins);
+  --font-body: var(--font-inter);
+
+  --title-size: clamp(1.8rem, 4vw, 3rem);
+  --h1-size: clamp(2.5rem, 5vw, 4rem);
+  --h2-size: clamp(2rem, 4.5vw, 3.5rem);
+  --h3-size: clamp(1.75rem, 4vw, 3rem);
+  --h4-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  --h5-size: clamp(1.25rem, 3vw, 2rem);
+  --h6-size: clamp(1.1rem, 2.5vw, 1.5rem);
+
+  --body-size: clamp(1rem, 2vw, 1.25rem);
+  --small-size: clamp(0.8rem, 1.5vw, 1rem);
+
+  --title-line-height: clamp(2rem, 4vw, 3.5rem);
+  --body-line-height: clamp(1.4rem, 2.4vw, 1.8rem);
+}
+
+/* ---------- VARIÁVEIS TEMA ---------- */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-black: var(--black);
+  --color-white: var(--white);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+
+  --font-title: var(--font-title);
+  --font-body: var(--font-body);
+
+  --text-title: var(--title-size);
+  --text-body: var(--body-size);
+}
+
+/* ---------- DARK MODE ---------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary: #39ff14;
+    --secondary: #8B5CF6;
+  }
+}
+
+/* ---------- BODY ---------- */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), sans-serif;
+}
+
+/* ---------- TIPOGRAFIA ---------- */
+h1 {
+  font-family: var(--font-title);
+  font-size: var(--h1-size);
+  line-height: var(--title-line-height);
+}
+
+h2 {
+  font-family: var(--font-title);
+  font-size: var(--h2-size);
+  line-height: var(--title-line-height);
+}
+
+h3 {
+  font-family: var(--font-title);
+  font-size: var(--h3-size);
+  line-height: var(--title-line-height);
+  color: var(--foreground);
+}
+
+h4 {
+  font-family: var(--font-title);
+  font-size: var(--h4-size);
+  line-height: var(--title-line-height);
+}
+
+h5 {
+  font-family: var(--font-title);
+  font-size: var(--h5-size);
+  line-height: var(--title-line-height);
+}
+
+h6 {
+  font-family: var(--font-title);
+  font-size: var(--h6-size);
+  line-height: var(--title-line-height);
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: var(--body-size);
+  line-height: var(--body-line-height);
+}
+
+small {
+  font-family: var(--font-body);
+  font-size: var(--small-size);
+  line-height: var(--body-line-height);
+}
