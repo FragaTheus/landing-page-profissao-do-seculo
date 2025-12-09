@@ -1,24 +1,19 @@
 import { Header } from "@/components/Header";
 import { HeroContent } from "@/components/HeroContent";
-import { HeroFooter } from "@/components/HeroFooter";
 
 export const HeroSection = () => {
   return (
-    <section id="hero-section">
+    <section id="hero-section" className="h-[78svh] md:h-[75svh]">
       <div
         id="hero-container"
-        className="h-svh w-full grid grid-rows-7 m-auto p-2"
+        className="h-full w-full grid grid-rows-7 m-auto"
       >
         <div className="flex items-center">
           <Header />
         </div>
 
-        <div className="row-span-5">
+        <div className="row-span-6">
           <HeroContent />
-        </div>
-
-        <div>
-          <HeroFooter />
         </div>
       </div>
     </section>

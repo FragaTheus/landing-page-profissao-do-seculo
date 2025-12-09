@@ -1,0 +1,46 @@
+import content from "@/content/introContent.json";
+import { ClipboardCheck, Map, PieChart } from "lucide-react";
+
+type BulletProps = {
+  title: string;
+  text: string;
+  icon: React.ReactNode;
+};
+
+const bullets: BulletProps[] = [
+  {
+    title: content.intro.bullets[0].title,
+    text: content.intro.bullets[0].content,
+    icon: <ClipboardCheck className="text-secondary size-8" />,
+  },
+  {
+    title: content.intro.bullets[1].title,
+    text: content.intro.bullets[1].content,
+    icon: <Map className="text-secondary size-8" />,
+  },
+  {
+    title: content.intro.bullets[2].title,
+    text: content.intro.bullets[2].content,
+    icon: <PieChart className="text-secondary size-8" />,
+  },
+];
+
+const Bullets = (prop: BulletProps) => {
+  return (
+    <div className="w-full h-full flex justify-start flex-col p-2 items-start gap-2 md:gap-3">
+      {prop.icon}
+      <p className="font-bold">{prop.title}</p>
+      <small>{prop.text}</small>
+    </div>
+  );
+};
+
+export const IntroBullets = () => {
+  return (
+    <div id="cards" className="w-full h-1/2 grid grid-cols-1 md:grid-cols-3">
+      {bullets.map((b, i) => (
+        <Bullets key={i} title={b.title} text={b.text} icon={b.icon} />
+      ))}
+    </div>
+  );
+};

@@ -1,11 +1,12 @@
 import { HeroSection } from "@/section/HeroSection";
+import { IntroSection } from "@/section/IntroSection";
 
 export default function Home() {
   return (
-    <div className="max-w-[1440px] m-auto">
+    <div className="max-w-[1440px] m-auto px-3">
       <main>
         <HeroSection />
-        <section className="h-svh w-full"></section>
+        <IntroSection />
       </main>
     </div>
   );
