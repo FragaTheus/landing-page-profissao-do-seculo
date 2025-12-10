@@ -138,6 +138,9 @@ small {
   background: #8B5CF6 !important;
 }
 
+.bg-next {
+  background: linear-gradient(#f3f4f6 0%, #f3f4f6cc 20%, #fff 100%);
+}
 
 
 

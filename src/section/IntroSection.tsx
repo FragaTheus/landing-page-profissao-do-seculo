@@ -16,7 +16,7 @@ const IntroContent = () => {
         </div>
       </div>
       <div className="h-full w-full flex items-center justify-center md:px-10">
-        <small>{content.intro.description}</small>
+        <p>{content.intro.description}</p>
       </div>
     </div>
   );
@@ -24,7 +24,7 @@ const IntroContent = () => {
 
 export const IntroSection = () => {
   return (
-    <section>
+    <section className="mt-2">
       <div className="bg-gray-600 w-full min-h-[30svh] rounded-sm  flex flex-col p-5 md:p-10 text-white gap-10">
         <IntroContent />
         <IntroBullets />

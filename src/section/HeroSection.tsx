@@ -6,7 +6,7 @@ export const HeroSection = () => {
     <section id="hero-section">
       <div
         id="hero-container"
-        className="min-h-[78svh] w-full grid grid-rows-7 m-auto"
+        className="min-h-[80svh] w-full grid grid-rows-7 m-auto"
       >
         <div className="flex items-center">
           <Header />

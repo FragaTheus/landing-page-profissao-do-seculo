@@ -27,17 +27,20 @@ const bullets: BulletProps[] = [
 
 const Bullets = (prop: BulletProps) => {
   return (
-    <div className="w-full h-full flex justify-start flex-col  items-start gap-2 md:gap-3">
+    <div className="w-full h-full flex justify-start flex-col items-start gap-2 md:gap-5">
       {prop.icon}
       <p className="font-bold">{prop.title}</p>
-      <small>{prop.text}</small>
+      <p>{prop.text}</p>
     </div>
   );
 };
 
 export const IntroBullets = () => {
   return (
-    <div id="cards" className="w-full h-1/2 grid grid-cols-1 md:grid-cols-3">
+    <div
+      id="cards"
+      className="w-full h-1/2 grid grid-cols-1 md:grid-cols-3 gap-5"
+    >
       {bullets.map((b, i) => (
         <Bullets key={i} title={b.title} text={b.text} icon={b.icon} />
       ))}
