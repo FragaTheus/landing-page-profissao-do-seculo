@@ -1,0 +1,26 @@
+{
+  "benefits": {
+    "card1": {
+      "quantity": "+30k",
+      "content": "Pessoas já aplicaram esse método e comprovaram os resultados."
+    },
+
+    "card2": {
+      "content": "Toda",
+      "span1": " estrutura ",
+      "content1": "foi criada para iniciantes, tornando mais fácil alcançar",
+      "span2": " resultados reais ",
+      "content2": "já na primeira semana."
+    },
+
+    "card3": {
+      "title": "O que você recebe ao adquirir o eBook:",
+      "benefits": [
+      "Acesso imediato ao eBook completo em PDF, para começar a aprender e aplicar no mesmo dia.",
+      "Guias passo a passo explicando como se cadastrar, iniciar as tarefas e evoluir de forma segura.",
+      "Lista atualizada de plataformas confiáveis com tarefas reais, garantindo pagamentos verdadeiros.",
+      "Métodos simples que permitem gerar seus primeiros ganhos sem precisar vender, aparecer ou ter experiência."
+    ]
+    }
+  }
+}

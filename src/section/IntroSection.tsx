@@ -9,7 +9,9 @@ const IntroContent = () => {
     >
       <div className="h-full w-full flex items-start justify-center">
         <div>
-          <small className="text-secondary">{content.intro.headline}</small>
+          <small className="text-primary font-bold">
+            {content.intro.headline}
+          </small>
           <h3 className="font-bold">{content.intro.title}</h3>
         </div>
       </div>
@@ -22,8 +24,8 @@ const IntroContent = () => {
 
 export const IntroSection = () => {
   return (
-    <section className="w-full min-h-[60svh]">
-      <div className="bg-foreground w-full h-full rounded-sm  flex flex-col p-5 md:p-10 text-background gap-10">
+    <section>
+      <div className="bg-gray-600 w-full min-h-[30svh] rounded-sm  flex flex-col p-5 md:p-10 text-white gap-10">
         <IntroContent />
         <IntroBullets />
       </div>

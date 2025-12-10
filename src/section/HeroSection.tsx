@@ -3,10 +3,10 @@ import { HeroContent } from "@/components/HeroContent";
 
 export const HeroSection = () => {
   return (
-    <section id="hero-section" className="h-[78svh] md:h-[75svh]">
+    <section id="hero-section">
       <div
         id="hero-container"
-        className="h-full w-full grid grid-rows-7 m-auto"
+        className="min-h-[78svh] w-full grid grid-rows-7 m-auto"
       >
         <div className="flex items-center">
           <Header />

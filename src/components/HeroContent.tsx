@@ -11,7 +11,7 @@ const MainContent = () => {
     );
   };
   return (
-    <div className="order-2 md:order-1 m-auto flex flex-col gap-2 md:gap-5 items-start">
+    <div className="order-2 md:order-1 m-auto flex flex-col gap-3 md:gap-6 items-start py-3">
       <h1 className="font-bold">{content.content.title}</h1>
       <p>{content.content.description}</p>
       <CtaBtn />

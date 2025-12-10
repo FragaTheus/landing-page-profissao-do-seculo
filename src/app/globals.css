@@ -2,11 +2,13 @@
 
 /* ---------- VARIÁVEIS BASE ---------- */
 :root {
-  --background: #fafafa;
+  --background: #f0f0f0;
   --foreground: #2a2a2a;
 
   --black: #000000;
   --white: #ffffff;
+
+  --surface: #ffffff;
 
   --primary: #39ff14;
   --secondary: #8B5CF6;
@@ -39,6 +41,7 @@
   --color-white: var(--white);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-surface: var(--surface);
 
   --font-title: var(--font-title);
   --font-body: var(--font-body);
@@ -51,10 +54,11 @@
 /* ---------- DARK MODE ---------- */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #2a2a2a;
     --foreground: #ededed;
     --primary: #39ff14;
     --secondary: #8B5CF6;
+    --surface: #000000;
   }
 }
 
@@ -113,3 +117,28 @@ small {
   font-size: var(--small-size);
   line-height: var(--body-line-height);
 }
+
+.swiper {
+  height: 100% !important;
+}
+
+.swiper-slide {
+  height: 100% !important;
+  padding-bottom: 50px !important;
+  padding-top: 50px;
+}
+
+
+
+.swiper-pagination-bullet {
+  background: var(--foreground) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #8B5CF6 !important;
+}
+
+
+
+
+

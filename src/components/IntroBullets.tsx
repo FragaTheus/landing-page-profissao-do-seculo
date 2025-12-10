@@ -11,23 +11,23 @@ const bullets: BulletProps[] = [
   {
     title: content.intro.bullets[0].title,
     text: content.intro.bullets[0].content,
-    icon: <ClipboardCheck className="text-secondary size-8" />,
+    icon: <ClipboardCheck className="text-primary size-8" />,
   },
   {
     title: content.intro.bullets[1].title,
     text: content.intro.bullets[1].content,
-    icon: <Map className="text-secondary size-8" />,
+    icon: <Map className="text-primary size-8" />,
   },
   {
     title: content.intro.bullets[2].title,
     text: content.intro.bullets[2].content,
-    icon: <PieChart className="text-secondary size-8" />,
+    icon: <PieChart className="text-primary size-8" />,
   },
 ];
 
 const Bullets = (prop: BulletProps) => {
   return (
-    <div className="w-full h-full flex justify-start flex-col p-2 items-start gap-2 md:gap-3">
+    <div className="w-full h-full flex justify-start flex-col  items-start gap-2 md:gap-3">
       {prop.icon}
       <p className="font-bold">{prop.title}</p>
       <small>{prop.text}</small>
