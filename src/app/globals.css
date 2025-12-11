@@ -138,10 +138,17 @@ small {
   background: #8B5CF6 !important;
 }
 
-.bg-next {
-  background: linear-gradient(#f3f4f6 0%, #f3f4f6cc 20%, #fff 100%);
+.about-bg::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -50%;
+  width: 200%;
+  height: 120svh;
+  background-color: #39ff14;
+  transform: rotate(-10deg);
+  z-index: -1;
 }
-
 
 
 
