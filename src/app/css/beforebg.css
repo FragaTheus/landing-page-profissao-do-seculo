@@ -1,0 +1,11 @@
+.about-bg::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -50%;
+  width: 200%;
+  height: 120svh;
+  background-color: #39ff14;
+  transform: rotate(-10deg);
+  z-index: -1;
+}

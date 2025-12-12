@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* ---------- VARIÁVEIS BASE ---------- */
 :root {
   --background: #f0f0f0;
   --foreground: #2a2a2a;
@@ -11,12 +10,11 @@
   --surface: #ffffff;
 
   --primary: #39ff14;
-  --secondary: #8B5CF6;
+  --secondary: #5B21B6; /* roxo mais escuro para tema claro */
 
   --font-title: var(--font-poppins);
   --font-body: var(--font-inter);
   --font-bullet: var(--font-anton);
-
 
   --title-size: clamp(1.8rem, 4vw, 3rem);
   --h1-size: clamp(2.5rem, 5vw, 4rem);
@@ -33,7 +31,6 @@
   --body-line-height: clamp(1.4rem, 2.4vw, 1.8rem);
 }
 
-/* ---------- VARIÁVEIS TEMA ---------- */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -51,25 +48,22 @@
   --text-body: var(--body-size);
 }
 
-/* ---------- DARK MODE ---------- */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #2a2a2a;
     --foreground: #ededed;
     --primary: #39ff14;
-    --secondary: #8B5CF6;
+    --secondary: #A78BFA; /* roxo mais claro para tema escuro */
     --surface: #000000;
   }
 }
 
-/* ---------- BODY ---------- */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-body), sans-serif;
 }
 
-/* ---------- TIPOGRAFIA ---------- */
 h1 {
   font-family: var(--font-title);
   font-size: var(--h1-size);
@@ -118,37 +112,8 @@ small {
   line-height: var(--body-line-height);
 }
 
-.swiper {
-  height: 100% !important;
-}
-
-.swiper-slide {
-  height: 100% !important;
-  padding-bottom: 50px !important;
-  padding-top: 50px;
-}
 
 
-
-.swiper-pagination-bullet {
-  background: var(--foreground) !important;
-}
-
-.swiper-pagination-bullet-active {
-  background: #8B5CF6 !important;
-}
-
-.about-bg::before {
-  content: "";
-  position: absolute;
-  top: -30%;
-  left: -50%;
-  width: 200%;
-  height: 120svh;
-  background-color: #39ff14;
-  transform: rotate(-10deg);
-  z-index: -1;
-}
 
 
 

@@ -6,6 +6,7 @@ import avatar3 from "@/assets/avatar3.webp";
 import avatar4 from "@/assets/avatar4.webp";
 import avatar5 from "@/assets/avatar5.webp";
 import avatar6 from "@/assets/avatar6.webp";
+import "@/app/css/beforebg.css";
 
 const avatars = [avatar, avatar2, avatar3, avatar4, avatar5, avatar6];
 
@@ -13,9 +14,6 @@ export const AboutMainContent = () => {
   return (
     <div className=" flex flex-col items-start justify-evenly md:p-5 gap-3 order-2 md:order-1">
       <div>
-        <small className="text-secondary font-bold">
-          {content.about.headline}
-        </small>
         <h4 className="text-black font-bold">{content.about.title}</h4>
       </div>
       <div className="bg-surface p-3 rounded-sm w-full flex flex-col gap-2">
@@ -39,7 +37,9 @@ export const AboutMainContent = () => {
               />
             ))}
           </div>
-          <small className="font-semibold">{content.about.avatarsText}</small>
+          <small className="font-black text-background">
+            {content.about.avatarsText}
+          </small>
         </div>
       </div>
 

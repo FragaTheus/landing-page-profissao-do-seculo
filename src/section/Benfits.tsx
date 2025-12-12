@@ -1,5 +1,12 @@
+"use client";
+
+import dynamic from "next/dynamic";
 import { WhyCards } from "@/components/WhyCards";
-import { BenefitsMainCard } from "@/components/BenfitsMainCard";
+
+const BenefitsMainCard = dynamic(() => import("@/components/BenfitsMainCard"), {
+  ssr: false,
+  loading: () => <div style={{ height: 200 }}>Carregando...</div>,
+});
 
 export const Benefits = () => {
   return (

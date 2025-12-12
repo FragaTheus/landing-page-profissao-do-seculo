@@ -8,14 +8,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
+import "@/app/css/swiper.css";
 
-export const BenefitsMainCard = () => {
+export default function BenefitsMainCard() {
   const benefits = content?.benefits?.card3?.benefits ?? [];
 
   return (
     <div className="w-full rounded-sm bg-surface grid grid-cols-1 md:grid-cols-2">
       <div className="py-4">
-        <Image src={icon} alt="Ebook" className="w-8/12 m-auto" />
+        <Image
+          src={icon}
+          alt="Ebook"
+          className="w-8/12 m-auto"
+          loading="lazy"
+        />
       </div>
 
       <div className="p-5 md:p-10 flex flex-col gap-2">
@@ -42,4 +48,4 @@ export const BenefitsMainCard = () => {
       </div>
     </div>
   );
-};
+}

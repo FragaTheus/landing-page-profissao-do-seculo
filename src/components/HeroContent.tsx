@@ -28,7 +28,12 @@ const DesignContent = () => {
   return (
     <div className="order-1 md:order-2 h-full w-full flex items-center">
       <div className="w-5/7 md:w-full">
-        <Image src={icon} alt="Icone de um computador com graficos" />
+        <Image
+          src={icon}
+          alt="Icone de um computador com graficos"
+          priority
+          fetchPriority="high"
+        />
       </div>
     </div>
   );
