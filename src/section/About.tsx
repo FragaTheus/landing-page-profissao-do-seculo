@@ -4,7 +4,7 @@ import { AboutMainContent } from "@/components/AboutMainContent";
 
 export const AboutSection = () => {
   return (
-    <section className="w-full max-w-[1440px] m-auto p-4">
+    <section>
       <div className="min-h-[60svh] w-full grid grid-cols-1 md:grid-cols-2 gap-3">
         <AboutMainContent />
         <div className=" w-full md:h-full order-1 md:order-2 relative flex">

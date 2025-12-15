@@ -27,18 +27,19 @@ const Footer = dynamic(
 
 export default function Home() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden relative">
+      <div className="h-screen w-full absolute -z-50 top-0 left-0 bg-surface" />
       <main className="max-w-[1440px] m-auto px-3">
         <HeroSection />
         <IntroSection />
         <Benefits />
+        <AboutSection />
       </main>
       <div className="about-bg relative">
-        <AboutSection />
-      </div>
-      <div className="max-w-[1440px] m-auto px-3">
-        <Cta />
-        <Footer />
+        <div className="max-w-[1440px] m-auto px-3 mt-2">
+          <Cta />
+          <Footer />
+        </div>
       </div>
     </div>
   );

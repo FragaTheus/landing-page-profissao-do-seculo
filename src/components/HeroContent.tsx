@@ -1,7 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import icon from "@/assets/hero-icon.svg";
 import content from "@/content/heroContent.json";
-import { CtaBtn } from "./CtaButton";
+import dynamic from "next/dynamic";
+import "@/app/css/titlegradient.css";
+
+const CtaBtn = dynamic(
+  () => import("@/components/CtaButton").then((mod) => mod.CtaBtn),
+  {
+    ssr: false,
+    loading: () => <p className="text-secondary p-2">Carregando...</p>,
+  }
+);
 
 const MainContent = () => {
   return (
@@ -10,7 +21,9 @@ const MainContent = () => {
         <small className="text-secondary ml-1 font-semibold">
           @maverickferreira — Profissão do Século
         </small>
-        <h1 className="font-bold tracking-tight">{content.content.title}</h1>
+        <h1 className="font-bold tracking-tight bg-clip-text text-transparent animate-shimmer">
+          {content.content.title}
+        </h1>
       </div>
       <p>{content.content.description}</p>
       <CtaBtn text={content.content.cta} />
