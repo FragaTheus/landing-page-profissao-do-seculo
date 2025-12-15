@@ -1,8 +1,6 @@
-import content from "@/content/aboutContent.json";
 import Image from "next/image";
 import bgDesktop from "@/assets/desktop.webp";
 import { AboutMainContent } from "@/components/AboutMainContent";
-import { Users } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -19,12 +17,6 @@ export const AboutSection = () => {
            1920px"
             className="object-cover rounded-sm h-full w-full"
           />
-          <div className="absolute bottom-1 w-full">
-            <div className="m-auto w-11/12 bg-surface rounded-sm flex items-center justify-evenly p-2">
-              <Users className="text-secondary size-15" />
-              <small className="font-semibold">{content.about.title}</small>
-            </div>
-          </div>
         </div>
       </div>
     </section>

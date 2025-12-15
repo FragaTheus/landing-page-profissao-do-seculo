@@ -1,15 +1,9 @@
 import Image from "next/image";
 import icon from "@/assets/hero-icon.svg";
 import content from "@/content/heroContent.json";
+import { CtaBtn } from "./CtaButton";
 
 const MainContent = () => {
-  const CtaBtn = () => {
-    return (
-      <button className="bg-primary w-2/3 rounded-sm p-3 md:p-5 transition-all hover:scale-110 active:scale-95 text-black hover:drop-shadow-2xl font-semibold">
-        {content.content.cta}
-      </button>
-    );
-  };
   return (
     <div className="order-2 md:order-1 m-auto flex flex-col gap-3 md:gap-6 items-start">
       <div>
@@ -19,7 +13,7 @@ const MainContent = () => {
         <h1 className="font-bold tracking-tight">{content.content.title}</h1>
       </div>
       <p>{content.content.description}</p>
-      <CtaBtn />
+      <CtaBtn text={content.content.cta} />
     </div>
   );
 };
