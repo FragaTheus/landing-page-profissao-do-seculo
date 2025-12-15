@@ -27,8 +27,8 @@ const Footer = dynamic(
 
 export default function Home() {
   return (
-    <div className="overflow-hidden relative">
-      <div className="h-screen w-full absolute -z-50 top-0 left-0 bg-surface" />
+    <div className="relative">
+      <div className="h-screen w-full absolute -z-50 top-0 left-0 bg-linear-120 from-surface via-surface to-primary" />
       <main className="max-w-[1440px] m-auto px-3">
         <HeroSection />
         <IntroSection />

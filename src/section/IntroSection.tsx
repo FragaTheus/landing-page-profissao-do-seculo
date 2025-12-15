@@ -24,7 +24,7 @@ const IntroContent = () => {
 
 export const IntroSection = () => {
   return (
-    <section className="mt-2">
+    <section className="mt-2" id="intro">
       <div className="bg-gray-600 w-full min-h-[30svh] rounded-sm  flex flex-col p-5 md:p-10 text-white gap-10">
         <IntroContent />
         <IntroBullets />

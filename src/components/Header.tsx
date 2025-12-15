@@ -1,8 +1,9 @@
-import content from "@/content/heroContent.json";
+import { HeaderCtaBtn } from "./HeaderCta";
 
-export const NavBtns = (props: { text: string }) => {
+export const NavBtns = (props: { text: string; href: string }) => {
   return (
-    <button
+    <a
+      href={props.href}
       className="hover:bg-foreground 
                       p-2
                       rounded-sm 
@@ -14,7 +15,7 @@ export const NavBtns = (props: { text: string }) => {
                       hover:text-background"
     >
       <small>{props.text}</small>
-    </button>
+    </a>
   );
 };
 
@@ -23,28 +24,14 @@ export const Header = () => {
     <header className="w-full h-full flex items-center">
       <div className="w-full h-1/2 m-auto justify-between items-center flex">
         <nav className="flex gap-1 md:gap-8 items-center justify-center">
-          <NavBtns text="Inicio" />
+          <NavBtns text="Intro" href="#intro" />
 
-          <NavBtns text="Beneficio" />
+          <NavBtns text="Beneficio" href="#benefits" />
 
-          <NavBtns text="Sobre" />
+          <NavBtns text="Sobre" href="#about" />
         </nav>
         <div className="flex items-center justify-end">
-          <button
-            className="bg-foreground 
-                            py-3 
-                            px-2 
-                            md:px-4 
-                            rounded-sm 
-                            hover:scale-110 
-                            active:scale-95 
-                            transition-all 
-                            hover:drop-shadow-2xl 
-                            text-background
-                            font-semibold"
-          >
-            <small>{content.header.cta}</small>
-          </button>
+          <HeaderCtaBtn />
         </div>
       </div>
     </header>

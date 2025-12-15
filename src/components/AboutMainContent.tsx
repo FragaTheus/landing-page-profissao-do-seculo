@@ -15,7 +15,7 @@ export const AboutMainContent = () => {
   return (
     <div className=" flex flex-col items-start justify-between gap-3 order-2 md:order-1">
       <div className="w-full bg-surface rounded-sm p-5 flex flex-col gap-5">
-        <h4 className="font-black">{content.about.title}</h4>
+        <h4 className="font-black text-secondary">{content.about.title}</h4>
         <div className="flex p-3">
           {avatars.map((a, i) => (
             <Image

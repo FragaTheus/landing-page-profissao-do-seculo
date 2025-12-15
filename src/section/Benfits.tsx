@@ -10,7 +10,7 @@ const BenefitsMainCard = dynamic(() => import("@/components/BenfitsMainCard"), {
 
 export const Benefits = () => {
   return (
-    <section className="py-2">
+    <section className="py-2" id="benefits">
       <div className="min-[60svh] w-full grid grid-rows-6 gap-2">
         <div className="row-span-3">
           <WhyCards />

@@ -112,6 +112,9 @@ small {
   line-height: var(--body-line-height);
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 

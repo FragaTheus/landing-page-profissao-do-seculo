@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${poppins.variable} ${anton.variable} antialiased w-full bg-background`}
+        className={`${inter.variable} ${poppins.variable} ${anton.variable} antialiased w-full bg-background overflow-x-hidden`}
       >
         {children}
       </body>
