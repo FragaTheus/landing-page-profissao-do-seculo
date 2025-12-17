@@ -14,7 +14,7 @@ export const HeaderCtaBtn = () => {
       className={btnClass}
       onClick={() => window.open(url, "_blank")}
     >
-      <small>{content.header.cta}</small>
+      <small id="header-cta-btn">{content.header.cta}</small>
     </button>
   );
 };

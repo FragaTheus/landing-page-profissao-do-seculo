@@ -15,7 +15,7 @@ export const NavBtns = (props: { text: string; href: string; id: string }) => {
                       active:bg-black 
                       hover:text-background"
     >
-      <small>{props.text}</small>
+      <small id={props.id}>{props.text}</small>
     </a>
   );
 };
