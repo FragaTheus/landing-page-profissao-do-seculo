@@ -9,7 +9,11 @@ const btnClass =
 
 export const HeaderCtaBtn = () => {
   return (
-    <button className={btnClass} onClick={() => window.open(url, "_blank")}>
+    <button
+      id="header-cta-btn"
+      className={btnClass}
+      onClick={() => window.open(url, "_blank")}
+    >
       <small>{content.header.cta}</small>
     </button>
   );
