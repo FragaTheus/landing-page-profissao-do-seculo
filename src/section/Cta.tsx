@@ -13,7 +13,7 @@ const CtaBtn = dynamic(
 
 export const Cta = () => {
   return (
-    <div className="w-full">
+    <div className="w-full mt-2">
       <div className="bg-surface rounded-sm flex flex-col p-5 md:p-10  gap-5 md:gap-10 items-center">
         <h1 className="font-black text-center animate-shimmer">
           {content.cta.title}

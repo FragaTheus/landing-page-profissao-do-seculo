@@ -28,19 +28,16 @@ const Footer = dynamic(
 export default function Home() {
   return (
     <div className="relative">
-      <div className="h-screen w-full absolute -z-50 top-0 left-0 bg-linear-120 from-surface via-surface to-primary" />
+      <div className="h-screen w-full absolute -z-50 top-0 left-0 bg-surface" />
       <main className="max-w-[1440px] m-auto px-3">
         <HeroSection />
         <IntroSection />
         <Benefits />
         <AboutSection />
+        <Cta />
+        <Footer />
+        <div className="h-[35svh] w-full absolute -z-50 bottom-0 left-0 bg-gray-600" />
       </main>
-      <div className="about-bg relative">
-        <div className="max-w-[1440px] m-auto px-3 mt-2">
-          <Cta />
-          <Footer />
-        </div>
-      </div>
     </div>
   );
 }

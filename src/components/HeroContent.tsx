@@ -21,7 +21,7 @@ const MainContent = () => {
         <small className="text-secondary ml-1 font-semibold">
           @maverickferreira — Profissão do Século
         </small>
-        <h1 className="font-bold tracking-tight bg-clip-text">
+        <h1 className="font-bold tracking-tight bg-clip-text animate-shimmer">
           {content.content.title}
         </h1>
       </div>
