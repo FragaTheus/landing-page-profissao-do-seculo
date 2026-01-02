@@ -1,4 +1,4 @@
-import { writeFile } from "fs/promises";
+const { writeFile } = require("fs/promises");
 
 const SITE_URL = "https://profissaodoseculo.com.br/";
 const PAGESPEED_ENDPOINT =
