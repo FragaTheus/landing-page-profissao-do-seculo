@@ -22,7 +22,7 @@ jobs:
           node-version: 18
 
       - name: Instalar dependências mínimas
-        run: npm install ts-node typescript
+        run: npm install
 
       - name: Gerar relatório PageSpeed
         run: npx ts-node ./scripts/pagespeed.ts
