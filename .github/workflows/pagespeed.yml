@@ -9,6 +9,9 @@ jobs:
   pagespeed:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout do código
         uses: actions/checkout@v4
@@ -17,13 +20,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: "npm"
 
-      - name: Instalar dependências
-        run: pnpm install
+      - name: Instalar dependências mínimas
+        run: npm install ts-node typescript
 
       - name: Gerar relatório PageSpeed
-        run: npx ts-node scripts/pagespeed.ts
+        run: npx ts-node ./scripts/pagespeed.ts
 
       - name: Commit do relatório
         run: |

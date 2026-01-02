@@ -1,6 +1,6 @@
 import { writeFile } from "fs/promises";
 
-const SITE_URL = "https://example.com";
+const SITE_URL = "https://profissaodoseculo.com.br/";
 
 const PAGESPEED_ENDPOINT = "https://pagespeedonline.googleapis.com/pagespeedonline/v5/runPagespeed";
 
