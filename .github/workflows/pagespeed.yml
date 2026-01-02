@@ -20,10 +20,10 @@ jobs:
           cache: "npm"
 
       - name: Instalar dependências
-        run: npm install
+        run: pnpm install
 
       - name: Gerar relatório PageSpeed
-        run: npx ts-node scripts/generate-pagespeed.ts
+        run: npx ts-node scripts/pagespeed.ts
 
       - name: Commit do relatório
         run: |
