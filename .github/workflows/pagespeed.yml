@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Gerar relatório PageSpeed
-        run: npx ts-node ./scripts/pagespeed.ts
+        run: npx ts-node ./script/pagespeed.ts
 
       - name: Commit do relatório
         run: |
