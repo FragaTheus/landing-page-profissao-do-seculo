@@ -1,8 +1,8 @@
 import { writeFile } from "fs/promises";
 
 const SITE_URL = "https://profissaodoseculo.com.br/";
-
-const PAGESPEED_ENDPOINT = "https://pagespeedonline.googleapis.com/pagespeedonline/v5/runPagespeed";
+const PAGESPEED_ENDPOINT =
+  "https://pagespeedonline.googleapis.com/pagespeedonline/v5/runPagespeed";
 
 async function fetchPageSpeed() {
   const url = `${PAGESPEED_ENDPOINT}?url=${encodeURIComponent(
@@ -18,7 +18,7 @@ async function fetchPageSpeed() {
   return response.json();
 }
 
-function generateMarkdown(data: any): string {
+function generateMarkdown(data) {
   const lighthouse = data.lighthouseResult;
   const categories = lighthouse.categories;
 
@@ -60,6 +60,7 @@ async function run() {
     console.log("✅ PAGESPEED.md gerado com sucesso!");
   } catch (error) {
     console.error("❌ Erro ao gerar relatório:", error);
+    process.exit(1);
   }
 }
 

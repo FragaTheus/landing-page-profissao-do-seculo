@@ -16,16 +16,16 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Instalar dependências mínimas
+      - name: Instalar dependências do projeto
         run: npm install
 
       - name: Gerar relatório PageSpeed
-        run: npx ts-node ./script/pagespeed.ts
+        run: node script/pagespeed.js
 
       - name: Commit do relatório
         run: |
