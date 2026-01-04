@@ -14,20 +14,26 @@ Landing page desenvolvida com foco em **performance, SEO, acessibilidade e mensu
 
 ## 🖥️ Desktop
 
-🚀 Performance : 99
-♿ Acessibilidade : 98
-🛠️ Boas Práticas : 96
-🔍 SEO : 100
+| Categoria | Score |
+|----------|-------|
+| 🚀 Performance | 100 |
+| ♿ Acessibilidade | 98 |
+| 🛠️ Boas Práticas | 96 |
+| 🔍 SEO | 100 |
 
 ## 📱 Mobile
 
-🚀 Performance : 98
-♿ Acessibilidade : 98
-🛠️ Boas Práticas : 96
-🔍 SEO : 100
+| Categoria | Score |
+|----------|-------|
+| 🚀 Performance | 99 |
+| ♿ Acessibilidade | 98 |
+| 🛠️ Boas Práticas | 96 |
+| 🔍 SEO | 100 |
 
-**Gerado automaticamente via Google PageSpeed Insights API.**
-**Consultado em 04/01/2026, 15:12:03**
+---
+
+**Gerado automaticamente via Google PageSpeed Insights API.**  
+**Consultado em 04/01/2026, 15:20:17**
 
 <!-- PAGESPEED_END -->
 
