@@ -12,24 +12,22 @@ Landing page desenvolvida com foco em **performance, SEO, acessibilidade e mensu
 
 <!-- PAGESPEED_START -->
 
-# 📊 PageSpeed Insights
-
 ## 🖥️ Desktop
 
-🚀 Performance : 100
+🚀 Performance : 99
 ♿ Acessibilidade : 98
 🛠️ Boas Práticas : 96
 🔍 SEO : 100
 
 ## 📱 Mobile
 
-🚀 Performance : 74
+🚀 Performance : 98
 ♿ Acessibilidade : 98
 🛠️ Boas Práticas : 96
 🔍 SEO : 100
 
 **Gerado automaticamente via Google PageSpeed Insights API.**
-**Consultado em 04/01/2026, 14:59:04**
+**Consultado em 04/01/2026, 15:12:03**
 
 <!-- PAGESPEED_END -->
 

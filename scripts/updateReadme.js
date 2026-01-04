@@ -11,7 +11,7 @@ export default async function updateReadme(sectionMk){
         `${START}[\\s\\S]*?${END}`,"g"
     )
 
-    const replacement = `${START}\n\n${sectionMk}\n\n${END}`
+    const replacement = `${START}\n${sectionMk}\n${END}`
 
     const updateMk = readme.match(blockRegex) ? readme.replace(blockRegex, replacement) : `${readme}\n\n${replacement}`
 

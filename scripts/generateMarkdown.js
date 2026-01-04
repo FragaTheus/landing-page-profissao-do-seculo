@@ -2,8 +2,6 @@ export default function generateMarkdown(desktop, mobile) {
   const consultedAt = new Date().toLocaleString("pt-BR")
 
   return `
-# 📊 PageSpeed Insights
-
 ## 🖥️ Desktop
 
 🚀 Performance : ${desktop.performance} 
@@ -20,5 +18,5 @@ export default function generateMarkdown(desktop, mobile) {
 
 **Gerado automaticamente via Google PageSpeed Insights API.**
 **Consultado em ${consultedAt}**
-`;
+`
 }
