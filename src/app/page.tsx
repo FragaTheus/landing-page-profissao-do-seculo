@@ -2,7 +2,7 @@ import Footer from "@/section/Footer";
 import IntroSection from "@/section/IntroSection";
 import dynamic from "next/dynamic";
 
-const Benefits = dynamic(() => import("@/section/Benfits"), { ssr: false });
+const Benefits = dynamic(() => import("@/section/Benfits"), { ssr: true });
 
 const HeroSection = dynamic(() => import("@/section/HeroSection"), {
   ssr: true,
