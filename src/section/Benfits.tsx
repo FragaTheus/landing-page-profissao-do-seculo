@@ -5,7 +5,7 @@ import { WhyCards } from "@/components/WhyCards";
 
 const BenefitsMainCard = dynamic(() => import("@/components/BenfitsMainCard"), {
   ssr: false,
-  loading: () => <div style={{ height: 200 }}>Carregando...</div>,
+  loading: () => <div style={{ height: 200 }}>Carregando....</div>,
 });
 
 export default function Benefits() {
