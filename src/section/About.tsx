@@ -2,7 +2,7 @@ import Image from "next/image";
 import bgDesktop from "@/assets/desktop.webp";
 import { AboutMainContent } from "@/components/AboutMainContent";
 
-export const AboutSection = () => {
+export default function AboutSection() {
   return (
     <section id="about">
       <div className="min-h-[60svh] w-full grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -21,4 +21,4 @@ export const AboutSection = () => {
       </div>
     </section>
   );
-};
+}

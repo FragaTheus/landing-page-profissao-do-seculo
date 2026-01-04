@@ -1,29 +1,18 @@
-import { Benefits } from "@/section/Benfits";
+import Footer from "@/section/Footer";
+import IntroSection from "@/section/IntroSection";
 import dynamic from "next/dynamic";
 
-const HeroSection = dynamic(
-  () => import("@/section/HeroSection").then((mod) => mod.HeroSection),
-  { ssr: true }
-);
+const Benefits = dynamic(() => import("@/section/Benfits"), { ssr: false });
 
-const IntroSection = dynamic(
-  () => import("@/section/IntroSection").then((mod) => mod.IntroSection),
-  { ssr: true }
-);
-
-const AboutSection = dynamic(
-  () => import("@/section/About").then((mod) => mod.AboutSection),
-  { ssr: true }
-);
-
-const Cta = dynamic(() => import("@/section/Cta").then((mod) => mod.Cta), {
+const HeroSection = dynamic(() => import("@/section/HeroSection"), {
   ssr: true,
 });
 
-const Footer = dynamic(
-  () => import("@/section/Footer").then((mod) => mod.Footer),
-  { ssr: true }
-);
+const AboutSection = dynamic(() => import("@/section/About"), { ssr: true });
+
+const Cta = dynamic(() => import("@/section/Cta"), {
+  ssr: true,
+});
 
 export default function Home() {
   return (

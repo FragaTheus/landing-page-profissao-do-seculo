@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { HeroContent } from "@/components/HeroContent";
 
-export const HeroSection = () => {
+export default function HeroSection() {
   return (
     <section id="hero-section">
       <div
@@ -18,4 +18,4 @@ export const HeroSection = () => {
       </div>
     </section>
   );
-};
+}

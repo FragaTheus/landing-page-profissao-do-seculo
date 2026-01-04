@@ -11,7 +11,7 @@ const CtaBtn = dynamic(
   }
 );
 
-export const Cta = () => {
+export default function Cta() {
   return (
     <div className="w-full mt-2">
       <div className="bg-surface rounded-sm flex flex-col p-5 md:p-10  gap-5 md:gap-10 items-center">
@@ -23,4 +23,4 @@ export const Cta = () => {
       </div>
     </div>
   );
-};
+}

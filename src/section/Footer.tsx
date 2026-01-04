@@ -1,6 +1,6 @@
 import content from "@/content/footerContent.json";
 
-export const Footer = () => {
+export default function Footer() {
   return (
     <div className="flex flex-col opacity-70 items-center w-full mt-5 text-center text-white">
       <small>{content.footer.brand}</small>
@@ -9,4 +9,4 @@ export const Footer = () => {
       <small>{content.footer.copyright}</small>
     </div>
   );
-};
+}

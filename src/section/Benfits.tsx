@@ -8,7 +8,7 @@ const BenefitsMainCard = dynamic(() => import("@/components/BenfitsMainCard"), {
   loading: () => <div style={{ height: 200 }}>Carregando...</div>,
 });
 
-export const Benefits = () => {
+export default function Benefits() {
   return (
     <section className="py-2" id="benefits">
       <div className="min-[60svh] w-full grid grid-rows-6 gap-2">
@@ -22,4 +22,4 @@ export const Benefits = () => {
       </div>
     </section>
   );
-};
+}
