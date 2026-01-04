@@ -104,27 +104,47 @@ Disponibilizar uma landing page profissional, rápida e mensurável para convers
 
 ## 🚀 Como rodar o projeto localmente
 
+### Clone do repositorio
+
 ```bash
-# Clonar o repositório
 git clone https://github.com/FragaTheus/landing-page-profissao-do-seculo.git
-
-# Acessar pasta
 cd landing-page-profissao-do-seculo
+```
 
-# Instalar dependências
+### Instalar dependencias
+
+```bash
+# Usando npm
 npm install
-# ou
+```
+
+```bash
+# Usando yarn
 yarn install
-# ou
+
+```
+
+```bash
+# Usando pnpm
 pnpm install
 
-# Rodar o projeto localmente
+```
+### Rodar projeto localmente
+```bash
+# Usando npm
 npm run dev
-# ou
+```
+
+```bash
+# Usando yarn
 yarn dev
-# ou
+```
+
+```bash
+# Usando pnpm
 pnpm dev
 ```
+---
 
 ## 👨‍💻 Sobre o Autor
 
