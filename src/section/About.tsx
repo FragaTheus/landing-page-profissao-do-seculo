@@ -10,12 +10,12 @@ export default function AboutSection() {
         <div className=" w-full md:h-full order-1 md:order-2 relative flex">
           <Image
             src={bgDesktop}
-            alt="Descrição da imagem"
+            alt="Imagem do autor"
             loading="lazy"
-            sizes="(max-width: 768px) 720px,
-           (max-width: 1024px) 1024px,
-           1920px"
-            className="object-cover rounded-sm h-full w-full"
+            className="object-cover rounded-sm w-full h-full"
+            width={388}
+            height={218}
+            sizes="(max-width: 768px) 388px, (max-width: 1024px) 720px, 1024px"
           />
         </div>
       </div>
