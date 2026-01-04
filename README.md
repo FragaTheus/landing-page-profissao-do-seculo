@@ -1,44 +1,152 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Profissão do Século — Landing Page
 
-## Getting Started
+Landing page desenvolvida com foco em **performance, SEO, acessibilidade e mensuração de dados**, criada para substituir uma solução anterior baseada em Canva, que limitava análises técnicas e otimizações reais.
 
-First, run the development server:
+🔗 **Deploy:** https://profissaodoseculo.com.br/
+
+---
+
+## 🖼️ Impacto Visual & Performance
+
+### 📊 PageSpeed Insights
+
+<!-- PAGESPEED_START -->
+
+## 🖥️ Desktop
+
+🚀 Performance : 99  
+♿ Acessibilidade : 98  
+🛠️ Boas Práticas : 96  
+🔍 SEO : 100
+
+## 📱 Mobile
+
+🚀 Performance : 76  
+♿ Acessibilidade : 98  
+🛠️ Boas Práticas : 96  
+🔍 SEO : 100
+
+**Gerado automaticamente via Google PageSpeed Insights API.**  
+**Consultado em 04/01/2026, 13:04:33**
+
+<!-- PAGESPEED_END -->
+
+### 🖼️ Antes x Depois
+
+#### Versão anterior (Canva)
+
+![Versão Canva](./docs/canva.gif)
+
+#### Versão atual (Next.js)
+
+![Versão Next.js](./docs/next.gif)
+
+> Comparação visual demonstrando a evolução técnica, visual e de performance do projeto.
+
+---
+
+## 🎯 Objetivo e Problema Resolvido
+
+### Objetivo do Projeto
+
+Disponibilizar uma landing page profissional, rápida e mensurável para conversão de usuários, substituindo a versão anterior limitada do Canva.
+
+### Problema Resolvido
+
+- ❌ Impossibilidade de analisar performance real
+- ❌ Falta de controle sobre SEO técnico
+- ❌ Pouca flexibilidade para otimizações
+- ❌ Dependência total da plataforma
+
+**Solução:** Reconstrução do projeto do zero utilizando **Tecnologia Web**, garantindo controle total sobre código, métricas, otimizações e evolução contínua baseada em dados.
+
+---
+
+## 🛠️ Tecnologias, Estrutura e Monitoramento
+
+### Tecnologias Utilizadas
+
+- **Next.js**
+- **TypeScript**
+- **Tailwind CSS**
+
+#### Algumas das funcionalidades
+
+- 📱 **Responsividade:** Layout adaptável para diferentes tamanhos de tela (desktop, tablet e mobile)
+- 🌗 **Modo claro e escuro:** Implementação nativa de tema, alternável pelo usuário
+- 🎨 **Design próprio:** Layout e identidade visual totalmente criados por mim, priorizando experiência do usuário e clareza visual
+
+### Estrutura do Projeto
+
+#### Principal (`src/`)
+
+- `app/` — Roteamento e estrutura base (layout.tsx, page.tsx, estilos globais e por seção)
+- `assets/` — Imagens e SVGs
+- `components/` — Componentes reutilizáveis
+- `content/` — Conteúdo textual em JSON, separado do código
+- `section/` — Seções da landing page como componentes, facilitando organização e escalabilidade
+
+#### Estrutura adicional
+
+- `scripts/` — Scripts de automação e geração de métricas:
+
+  - **fetchPageSpeed.js** — Consome a API do Google PageSpeed Insights e formata scores.
+  - **generateMarkdown.js** — Gera Markdown dos resultados.
+  - **updateReadme.js** — Atualiza a seção marcada do README com os últimos resultados.
+  - **pagespeed.js** (main) — Orquestra o processo e pode ser executado manualmente ou via GitHub Actions.
+
+### Monitoramento e Analytics
+
+- **Google Tag Manager (GTM)** — Gerenciamento centralizado de tags e eventos: acesso à página, profundidade de scroll, cliques em links e CTAs.
+- **Google Analytics 4 (GA4)** — Monitora comportamento de navegação, interação e conversões, consumindo eventos do GTM.
+
+---
+
+## 🚀 Como rodar o projeto localmente
 
 ```bash
+# Clonar o repositório
+git clone https://github.com/FragaTheus/landing-page-profissao-do-seculo.git
+
+# Acessar pasta
+cd landing-page-profissao-do-seculo
+
+# Instalar dependências
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+
+# Rodar o projeto localmente
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 👨‍💻 Sobre o Autor
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Projeto desenvolvido por **Matheus Augusto Fraga Correa**, Desenvolvedor FullStack.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔒 Licença & Uso
 
-To learn more about Next.js, take a look at the following resources:
+Este repositório é de propriedade do projeto **Profissão do Século**, com todos os direitos reservados.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- O código pode ser **clonado e utilizado localmente** para testes, experimentos, estudos ou avaliação técnica.
+- **Redistribuição, uso comercial ou publicação em outros meios** não é permitido sem autorização do autor.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📌 Próximos Passos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [ ] Acompanhamento contínuo do desempenho do site em conjunto com o proprietário da landing page
+- [ ] Análise periódica de métricas de acesso, comportamento e conversão
+- [ ] Iterações de melhoria baseadas em dados reais e feedback do negócio
+- [ ] Evolução progressiva de performance e acessibilidade
+- [ ] Refinamento contínuo de SEO técnico
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-## 📊 Performance (PageSpeed Insights)
-
-Este projeto possui um relatório automatizado de performance gerado via **Google PageSpeed Insights**.
-
-➡️ **[Ver relatório completo de performance](./PAGESPEED.md)**
-
-> Relatório atualizado automaticamente via GitHub Actions.
+---
