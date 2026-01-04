@@ -25,12 +25,14 @@ jobs:
         run: npm install
 
       - name: Gerar relatório PageSpeed
-        run: node script/pagespeed.js
+        run: node scripts/main.js
+        env:
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
 
       - name: Commit do relatório
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add PAGESPEED.md
-          git commit -m "chore: update PageSpeed report" || echo "No changes"
+          git commit -m "docs: Atualizando README" || echo "No changes"
           git push
