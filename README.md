@@ -12,22 +12,24 @@ Landing page desenvolvida com foco em **performance, SEO, acessibilidade e mensu
 
 <!-- PAGESPEED_START -->
 
+# 📊 PageSpeed Insights
+
 ## 🖥️ Desktop
 
-🚀 Performance : 99  
-♿ Acessibilidade : 98  
-🛠️ Boas Práticas : 96  
+🚀 Performance : 100
+♿ Acessibilidade : 98
+🛠️ Boas Práticas : 96
 🔍 SEO : 100
 
 ## 📱 Mobile
 
-🚀 Performance : 76  
-♿ Acessibilidade : 98  
-🛠️ Boas Práticas : 96  
+🚀 Performance : 74
+♿ Acessibilidade : 98
+🛠️ Boas Práticas : 96
 🔍 SEO : 100
 
-**Gerado automaticamente via Google PageSpeed Insights API.**  
-**Consultado em 04/01/2026, 13:04:33**
+**Gerado automaticamente via Google PageSpeed Insights API.**
+**Consultado em 04/01/2026, 14:59:04**
 
 <!-- PAGESPEED_END -->
 
@@ -35,11 +37,11 @@ Landing page desenvolvida com foco em **performance, SEO, acessibilidade e mensu
 
 #### Versão anterior (Canva)
 
-![Versão Canva](./docs/canva.gif)
+![Versão Canva](./docs/canva.png)
 
 #### Versão atual (Next.js)
 
-![Versão Next.js](./docs/next.gif)
+![Versão Next.js](./docs/next.png)
 
 > Comparação visual demonstrando a evolução técnica, visual e de performance do projeto.
 
@@ -129,7 +131,9 @@ yarn install
 pnpm install
 
 ```
+
 ### Rodar projeto localmente
+
 ```bash
 # Usando npm
 npm run dev
@@ -144,6 +148,7 @@ yarn dev
 # Usando pnpm
 pnpm dev
 ```
+
 ---
 
 ## 👨‍💻 Sobre o Autor
