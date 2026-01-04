@@ -14,21 +14,21 @@ Landing page desenvolvida com foco em **performance, SEO, acessibilidade e mensu
 
 ## 🖥️ Desktop
 
-| Categoria | Score |
-|----------|-------|
-| 🚀 Performance | 100 |
-| ♿ Acessibilidade | 98 |
-| 🛠️ Boas Práticas | 96 |
-| 🔍 SEO | 100 |
+| Categoria         | Score |
+| ----------------- | ----- |
+| 🚀 Performance    | 100   |
+| ♿ Acessibilidade | 98    |
+| 🛠️ Boas Práticas  | 96    |
+| 🔍 SEO            | 100   |
 
 ## 📱 Mobile
 
-| Categoria | Score |
-|----------|-------|
-| 🚀 Performance | 99 |
-| ♿ Acessibilidade | 98 |
-| 🛠️ Boas Práticas | 96 |
-| 🔍 SEO | 100 |
+| Categoria         | Score |
+| ----------------- | ----- |
+| 🚀 Performance    | 99    |
+| ♿ Acessibilidade | 98    |
+| 🛠️ Boas Práticas  | 96    |
+| 🔍 SEO            | 100   |
 
 ---
 
@@ -75,12 +75,6 @@ Disponibilizar uma landing page profissional, rápida e mensurável para convers
 - **Next.js**
 - **TypeScript**
 - **Tailwind CSS**
-
-#### Algumas das funcionalidades
-
-- 📱 **Responsividade:** Layout adaptável para diferentes tamanhos de tela (desktop, tablet e mobile)
-- 🌗 **Modo claro e escuro:** Implementação nativa de tema, alternável pelo usuário
-- 🎨 **Design próprio:** Layout e identidade visual totalmente criados por mim, priorizando experiência do usuário e clareza visual
 
 ### Estrutura do Projeto
 
