@@ -37,14 +37,14 @@ Landing page desenvolvida com foco em **performance, SEO, acessibilidade e mensu
 
 <!-- PAGESPEED_END -->
 
+---
+
 ### 🖼️ Antes x Depois
 
 #### Versão anterior (Canva)
-
 ![Versão Canva](./docs/canva.png)
 
 #### Versão atual (Next.js)
-
 ![Versão Next.js](./docs/next.png)
 
 > Comparação visual demonstrando a evolução técnica, visual e de performance do projeto.
@@ -54,57 +54,56 @@ Landing page desenvolvida com foco em **performance, SEO, acessibilidade e mensu
 ## 🎯 Objetivo e Problema Resolvido
 
 ### Objetivo do Projeto
-
 Disponibilizar uma landing page profissional, rápida e mensurável para conversão de usuários, substituindo a versão anterior limitada do Canva.
 
-### Problema Resolvido
-
+### Problemas Identificados
 - ❌ Impossibilidade de analisar performance real
 - ❌ Falta de controle sobre SEO técnico
 - ❌ Pouca flexibilidade para otimizações
 - ❌ Dependência total da plataforma
 
-**Solução:** Reconstrução do projeto do zero utilizando **Tecnologia Web**, garantindo controle total sobre código, métricas, otimizações e evolução contínua baseada em dados.
+**Solução:** reconstrução completa do projeto utilizando **tecnologia web moderna**, garantindo controle total sobre código, métricas, otimizações e evolução contínua baseada em dados.
 
 ---
 
-## 🛠️ Tecnologias, Estrutura e Monitoramento
+## 🛠️ Stack Tecnológica
 
-### Tecnologias Utilizadas
+### Front-end
+![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-- **Next.js**
-- **TypeScript**
-- **Tailwind CSS**
+---
 
-### Estrutura do Projeto
+## 🧱 Estrutura do Projeto
 
-#### Principal (`src/`)
-
-- `app/` — Roteamento e estrutura base (layout.tsx, page.tsx, estilos globais e por seção)
+### Diretório principal (`src/`)
+- `app/` — Roteamento e estrutura base (layout, páginas e estilos globais)
 - `assets/` — Imagens e SVGs
 - `components/` — Componentes reutilizáveis
-- `content/` — Conteúdo textual em JSON, separado do código
-- `section/` — Seções da landing page como componentes, facilitando organização e escalabilidade
+- `content/` — Conteúdo textual desacoplado em JSON
+- `section/` — Seções da landing page como componentes independentes
 
-#### Estrutura adicional
+### Scripts de automação (`scripts/`)
+- **fetchPageSpeed.js** — Consumo da API do Google PageSpeed Insights
+- **generateMarkdown.js** — Geração automática de Markdown
+- **updateReadme.js** — Atualização automática do README
+- **pagespeed.js** — Script principal (execução manual ou via GitHub Actions)
 
-- `scripts/` — Scripts de automação e geração de métricas:
+---
 
-  - **fetchPageSpeed.js** — Consome a API do Google PageSpeed Insights e formata scores.
-  - **generateMarkdown.js** — Gera Markdown dos resultados.
-  - **updateReadme.js** — Atualiza a seção marcada do README com os últimos resultados.
-  - **pagespeed.js** (main) — Orquestra o processo e pode ser executado manualmente ou via GitHub Actions.
+## 📈 Monitoramento e Analytics
+![Google Analytics](https://img.shields.io/badge/Google_Analytics_4-E37400?style=for-the-badge&logo=googleanalytics&logoColor=white)
+![Google Tag Manager](https://img.shields.io/badge/Google_Tag_Manager-246FDB?style=for-the-badge&logo=googletagmanager&logoColor=white)
 
-### Monitoramento e Analytics
-
-- **Google Tag Manager (GTM)** — Gerenciamento centralizado de tags e eventos: acesso à página, profundidade de scroll, cliques em links e CTAs.
-- **Google Analytics 4 (GA4)** — Monitora comportamento de navegação, interação e conversões, consumindo eventos do GTM.
+- Monitoramento de eventos, scroll, cliques e CTAs
+- Análise de comportamento e conversão baseada em dados reais
 
 ---
 
 ## 🚀 Como rodar o projeto localmente
 
-### Clone do repositorio
+### Clonar o repositório
 
 ```bash
 git clone https://github.com/FragaTheus/landing-page-profissao-do-seculo.git
