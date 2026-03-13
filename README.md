@@ -16,7 +16,7 @@ Landing page desenvolvida com foco em **performance, SEO, acessibilidade e mensu
 
 | Categoria | Score |
 |----------|-------|
-| 🚀 Performance | 100 |
+| 🚀 Performance | 98 |
 | ♿ Acessibilidade | 98 |
 | 🛠️ Boas Práticas | 96 |
 | 🔍 SEO | 100 |
@@ -25,7 +25,7 @@ Landing page desenvolvida com foco em **performance, SEO, acessibilidade e mensu
 
 | Categoria | Score |
 |----------|-------|
-| 🚀 Performance | 97 |
+| 🚀 Performance | 75 |
 | ♿ Acessibilidade | 98 |
 | 🛠️ Boas Práticas | 96 |
 | 🔍 SEO | 100 |
@@ -33,7 +33,7 @@ Landing page desenvolvida com foco em **performance, SEO, acessibilidade e mensu
 ---
 
 **Gerado automaticamente via Google PageSpeed Insights API.**  
-**Consultado em 12/03/2026, 07:02:52**
+**Consultado em 13/03/2026, 07:01:30**
 
 <!-- PAGESPEED_END -->
 
