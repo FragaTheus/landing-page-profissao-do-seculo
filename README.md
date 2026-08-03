@@ -33,7 +33,7 @@ Landing page desenvolvida com foco em **performance, SEO, acessibilidade e mensu
 ---
 
 **Gerado automaticamente via Google PageSpeed Insights API.**  
-**Consultado em 02/08/2026, 06:59:34**
+**Consultado em 03/08/2026, 07:17:46**
 
 <!-- PAGESPEED_END -->
 
